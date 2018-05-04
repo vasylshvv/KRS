@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+     
+     
+	 <bean name="/index.html" class="plast.org.ua.upu.controller.KurinRegistrationSystemController" />
+	 <bean name="/registrkurupu.html" class="plast.org.ua.upu.controller.RegistrationKurinController"/>
+	 <bean name="/commonreport.html" class="plast.org.ua.upu.controller.ReportCommonController"/>
+	 <bean name="/viewdetailkurinupu.html" class="plast.org.ua.upu.controller.ViewDetailKurinUPUController"/>
+	 <bean name="/registrsamhurt.html" class="plast.org.ua.upu.controller.RegistrationSamHurtokController"/>
+	 <bean name="/complain.html" class="plast.org.ua.upu.controller.ComplaintsReqProblemController"/>
+	 <bean name="/faq.html" class="plast.org.ua.upu.controller.FAQController"/>
+	 <bean name="/viewdetailsamhurt.html" class="plast.org.ua.upu.controller.ViewDetailSMHurtokUPUController"/>
+	 
+	 <bean name="/addkurinupu.html" class="plast.org.ua.upu.controller.ajax.KurinUPUController" />
+	 <bean name="/addnewstan.html" class="plast.org.ua.upu.controller.ajax.StanytsyaController" />
+	 <bean name="/verificregister.html" class="plast.org.ua.upu.controller.ajax.VerificationRegistrCodeController"/>
+	 <bean name="/addhurtokupu.html" class="plast.org.ua.upu.controller.ajax.HurtokUPUController"/>
+	 <bean name="/addpersons.html" class="plast.org.ua.upu.controller.ajax.PersonsController"/>
+	 <bean name="/kurinuspups.html" class="plast.org.ua.upu.controller.ajax.KurinUSPUPUController"/>	 
+	 <bean name="/selectstupin.html" class="plast.org.ua.upu.controller.ajax.SelectStupinController"/>
+	 <bean name="/addpersonsusp.html" class="plast.org.ua.upu.controller.ajax.PersonsUSPController"/>
+	 <bean name="/addnewzvyazkovyy.html" class="plast.org.ua.upu.controller.ajax.ZvyazkovyyController"/>
+	 <bean name="/addnewvporyadnyk.html" class="plast.org.ua.upu.controller.ajax.VporyadnykController"/>
+	 <bean name="/yunakdetail.html" class="plast.org.ua.upu.controller.ajax.YunakDetailController"></bean>
+	 <bean name="/yunakstupinchange.html" class="plast.org.ua.upu.controller.ajax.YunakChangeStupinController"/>
+	 <bean name="/dilovedennya.html" class="plast.org.ua.upu.controller.ajax.DilovedennyaController"/>
+	 <bean name="/yunakdilovodhurtchange.html" class="plast.org.ua.upu.controller.ajax.YunakChangeDilovodHurtokController"/>
+	 <bean name="/yunakdilovodkurinchange.html" class="plast.org.ua.upu.controller.ajax.YunakChangeDilovodKurinController"/>
+	 <bean name="/selectstanpersons.html" class="plast.org.ua.upu.controller.ajax.SelectStanytsyaPersonsController"/>
+	 <bean name="/detailperson.html" class="plast.org.ua.upu.controller.ajax.PersonDetailController"/>
+	 <bean name="/addsamhurtokupu.html" class="plast.org.ua.upu.controller.ajax.SamHurtokUPUController"/>
+	 <bean name="/addrequest.html" class="plast.org.ua.upu.controller.ajax.RequestProblemController"/>
+	 <bean name="/quarterlyreport.html" class="plast.org.ua.upu.controller.ajax.QuarterlyReportsUPUContoller"/>
+	 
+	 <bean name="/uploadFile.html" class="test.TestUploadFile"/>
+	 <bean id="multipartResolver"
+		class="org.springframework.web.multipart.commons.CommonsMultipartResolver" >
+		<property name="maxUploadSize" value="10000000" />
+	 </bean>
+</beans>

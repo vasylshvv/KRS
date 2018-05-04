@@ -1,0 +1,33 @@
+.index-page {
+    text-align: center;
+    margin-top: 10px;
+}
+.index-page .href-item {
+    width: 40%;
+    color: #393E41;
+    text-align: left;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 4px;
+    background: #d3d3d3;
+    margin: 20px 5% 10px;
+    display: inline-block;
+    text-transform: uppercase;
+}
+.index-page .href-item:hover {
+    text-decoration: none;
+    opacity: .8;
+}
+.index-page .item-icon {
+    width: 60px;
+    height: 60px;
+    margin-right: 30px;
+    display: inline-block;
+}
+.index-page .item-icon img {
+    width: 100%;
+    height: auto;
+}
+.index-page .href-item.disabled {
+    opacity: .8;
+}
